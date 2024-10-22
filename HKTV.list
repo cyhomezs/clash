@@ -10,6 +10,10 @@ DOMAIN-SUFFIX,j2.hk
 DOMAIN-KEYWORD,rthklive
 DOMAIN-KEYWORD,nowtv100
 DOMAIN-SUFFIX,hoy.tv
+DOMAIN,mytvsuperlimited.hb.omtrdc.net
+DOMAIN,mytvsuperlimited.sc.omtrdc.net
+DOMAIN-SUFFIX,mytvsuper.com
+DOMAIN-SUFFIX,tvb.com
 IP-CIDR,103.84.220.0/22
 IP-CIDR,103.84.222.0/24
 IP-CIDR,202.126.48.0/20
