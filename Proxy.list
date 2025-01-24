@@ -32,3 +32,4 @@ IP-CIDR,208.67.220.220/32,no-resolve
 # IPTV
 IP-CIDR,50.7.234.10/32,no-resolve
 DOMAIN-SUFFIX,php.jdshipin.com
+DOMAIN-SUFFIX,gdaily.org
