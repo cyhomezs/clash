@@ -1,0 +1,52 @@
+;1、域名组
+ruleset=AI,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Copilot/Copilot.list
+ruleset=Youtube,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list
+ruleset=HKTV,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TVB/TVB.list
+ruleset=HKTV,https://raw.githubusercontent.com/cyhomezs/clash/refs/heads/main/HKTV.list
+ruleset=GitHub,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list
+ruleset=TikTok,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.list
+ruleset=Telegram,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Telegram/Telegram.list
+
+[custom]
+;解决DNS泄露，无分流群组
+ruleset=Youtube,DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+ruleset=Youtube,DOMAIN-SUFFIX,services.googleapis.cn
+ruleset=Youtube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+ruleset=DIRECT,GEOIP,CN,no-resolve
+ruleset=国外,FINAL
+
+
+;2、策略组（域名组-节点组）
+custom_proxy_group=AI`select`[]所有-手动`[]其他国家-自动`[]台湾节点-自动`[]日本节点-自动`[]新加坡节点-自动`[]韩国节点-自动`[]美国节点-自动`[]REJECT
+custom_proxy_group=Youtube`select`[]台湾节点-自动`[]日本节点-自动`[]新加坡节点-自动`[]韩国节点-自动`[]香港节点-自动`[]其他国家-自动`[]所有-手动`[]REJECT
+custom_proxy_group=Youtube`select`[]港台日新韩-自动`[]其他国家-自动`[]所有-手动`[]REJECT
+custom_proxy_group=HKTV`select`[]香港节点-自动`[]REJECT
+custom_proxy_group=GitHub`select`[]DIRECT`[]所有-手动`[]所有节点-自动`[]其他国家-自动`[]REJECT
+custom_proxy_group=TikTok`select`[]日本节点-自动`[]美国节点-自动`[]REJECT
+custom_proxy_group=Telegram`select`[]所有-手动`[]港台日新韩-自动`[]其他国家-自动`[]REJECT
+custom_proxy_group=国外`select`[]所有-手动`[]所有节点-自动`[]港台日新韩-自动`[]其他国家-自动`[]香港节点-自动`[]台湾节点-自动`[]日本节点-自动`[]新加坡节点-自动`[]韩国节点-自动`[]美国节点-自动`[]DIRECT`[]REJECT
+
+;3、节点组
+custom_proxy_group=所有-手动`select`.*
+custom_proxy_group=所有节点-自动`url-test`.*`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=香港节点-自动`url-test`(广港|香港|HK|Hong Kong|🇭🇰|HongKong)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=台湾节点-自动`url-test`(广台|台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=日本节点-自动`url-test`(广日|日本|JP|川日|东京|大阪|泉日|埼玉|🇯🇵|Japan)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=新加坡节点-自动`url-test`(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=韩国节点-自动`url-test`(广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=美国节点-自动`url-test`(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=其他国家-自动`url-test`(波|柬|尼|也|克|比|尔|立|冰|秘|耳|利|埃|希|孟|芬|愛|澳|英|德|南|意|法|拿|墨|印|越|俄|瑞|智|荷|比|巴|沙|班|泰|德|烏|以|Australia|Konghwaguk)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=港台日新韩-自动`url-test`(香港|HK|Hong Kong|🇭🇰|HongKong|台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|韩国|KR|首尔|春川|🇰🇷|Korea)`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=台日新韩-自动`url-test`(台湾|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|日本|JP|川日|东京|大阪|泉日|埼玉|🇯🇵|Japan|新加坡|SG|坡|狮城|🇸🇬|Singapore|韩国|KR|首尔|春川|🇰🇷|Korea)`http://www.gstatic.com/generate_204`60,150
+
+;4、启用规则集
+enable_rule_generator=true
+overwrite_original_rules=true
