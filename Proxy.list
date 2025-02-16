@@ -47,16 +47,13 @@ DOMAIN-SUFFIX,qichiyu.com
 # DOMAIN-SUFFIX,difyai.com
 DOMAIN-SUFFIX,hsy88.org
 DOMAIN-SUFFIX,xn--mes358acgm99l.com
-
 DOMAIN-SUFFIX,stotik.com
 DOMAIN-SUFFIX,streetfighter.com
 DOMAIN-SUFFIX,capcom.com
 DOMAIN-SUFFIX,fcdn.sk
 DOMAIN-SUFFIX,kooink.com
 DOMAIN-SUFFIX,nodeseek.com
-
 DOMAIN-SUFFIX,kjfx.cc
-
 DOMAIN-SUFFIX,polivera.ai
 DOMAIN-SUFFIX,asiassn.com
 DOMAIN-SUFFIX,mmcks.top
@@ -90,7 +87,6 @@ DOMAIN-SUFFIX,bulianglin.com
 DOMAIN-SUFFIX,coincola.com
 DOMAIN-SUFFIX,coincolacdn.com
 DOMAIN-SUFFIX,colaotc.com
-
 IP-CIDR,8.8.8.8/32,no-resolve
 IP-CIDR,8.8.4.4/32,no-resolve
 IP-CIDR,1.1.1.1/32,no-resolve
@@ -99,7 +95,6 @@ IP-CIDR,185.222.222.222/32,no-resolve
 IP-CIDR,208.67.222.222/32,no-resolve
 IP-CIDR,208.67.220.220/32,no-resolve
 IP-CIDR,142.250.0.0/16,no-resolve
-
 
 # IPTV
 IP-CIDR,50.7.234.10/32,no-resolve
