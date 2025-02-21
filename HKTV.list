@@ -26,6 +26,7 @@ DOMAIN,rthktv31-live.akamaized.net
 DOMAIN,rthktv32-live.akamaized.net
 DOMAIN-SUFFIX,rthk.hk
 DOMAIN-SUFFIX,rthk.org.hk
+DOMAIN-KEYWORD,viu.tv
 IP-CIDR,103.84.220.0/22
 IP-CIDR,103.84.222.0/24
 IP-CIDR,202.126.48.0/20
