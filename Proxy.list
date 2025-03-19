@@ -1,6 +1,5 @@
 # IPTV
 IP-CIDR,50.7.234.10/32,no-resolve
-DOMAIN-SUFFIX,gdaily.org
 
 # add by CY
 DOMAIN-SUFFIX,freedidi.com
