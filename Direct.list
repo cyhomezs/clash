@@ -5,8 +5,9 @@
 # DOMAIN-SUFFIX: 
 # IP-CIDR: 
 # PROCESS-NAME: 87
-# TOTAL: 87
-IP-CIDR,159.75.130.241/22
-DOMAIN,hongxingdl.com
-DOMAIN,hongxing.one
-DOMAIN,pool.ntp.org
+# TOTAL: 
+DOMAIN-SUFFIX,hongxingdl.com
+DOMAIN-SUFFIX,hongxing.one
+DOMAIN-SUFFIX,hongxingdl.club
+DOMAIN-SUFFIX,foodieguide.com
+DOMAIN-SUFFIX,foodieguide.us
