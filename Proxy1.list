@@ -27,6 +27,7 @@ IP-CIDR,31.14.252.2/32,no-resolve
 IP-CIDR,103.216.221.69/32,no-resolve
 IP-CIDR,149.50.211.149/32,no-resolve
 IP-CIDR,138.199.21.203/32,no-resolve
+IP-CIDR,138.199.21.212/32,no-resolve
 IP-CIDR,89.33.8.50/32,no-resolve
 IP-CIDR,169.150.218.55,no-resolve
 IP-CIDR,146.70.246.130,no-resolve
@@ -36,6 +37,7 @@ IP-CIDR,95.135.253.154,no-resolve
 IP-CIDR,205.147.22.30,no-resolve
 IP-CIDR,103.216.221.73,no-resolve
 IP-CIDR,149.50.211.159,no-resolve
+
 # IPTV
 IP-CIDR,50.7.234.10/32,no-resolve
 
