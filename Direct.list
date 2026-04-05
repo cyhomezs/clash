@@ -10,9 +10,10 @@ DOMAIN-SUFFIX,hongxingyun.xyz
 DOMAIN-SUFFIX,hongxingyun.blog
 DOMAIN-SUFFIX,hongxingyun.club
 DOMAIN-SUFFIX,hongxingyun.pro
-DOMAIN-SUFFIX,foodieguide.com
+# DOMAIN-SUFFIX,foodieguide.com
 DOMAIN-SUFFIX,foodieguide.us
 DOMAIN-SUFFIX,github.geekery.cn
+DOMAIN-KEYWORD,icloud
 # DOMAIN-KEYWORD,teachable
 # DOMAIN-KEYWORD,teachablecdn
 DOMAIN-SUFFIX,namecheap.com
