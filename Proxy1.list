@@ -25,6 +25,9 @@ IP-CIDR,208.67.220.220/32,no-resolve
 # IPTV
 IP-CIDR,50.7.234.10/32,no-resolve
 
+#AI API
+DOMAIN-SUFFIX,anything.com
+
 # add by CY
 DOMAIN-SUFFIX,freedidi.com
 DOMAIN-SUFFIX,aktv.top
@@ -41,3 +44,4 @@ DOMAIN-KEYWORD,goldrattschool
 DOMAIN-SUFFIX,falais.com
 DOMAIN-KEYWORD,hkma
 DOMAIN-SUFFIX,mdgw.com
+
