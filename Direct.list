@@ -10,11 +10,12 @@
 DOMAIN-SUFFIX,foodieguide.us
 DOMAIN-SUFFIX,github.geekery.cn
 DOMAIN-KEYWORD,icloud
-# DOMAIN-KEYWORD,teachable
-# DOMAIN-KEYWORD,teachablecdn
+DOMAIN-KEYWORD,teachable
+DOMAIN-KEYWORD,teachablecdn
 DOMAIN-SUFFIX,namecheap.com
 DOMAIN-KEYWORD,polar
 DOMAIN-SUFFIX,ttsmaker.cn
 DOMAIN-SUFFIX,iosapps.itunes.apple.com
 DOMAIN-SUFFIX,ngc.nvidia.com
-DOMAIN-SUFFIX,teachable.com
+# DOMAIN-SUFFIX,teachable.com
+# DOMAIN-SUFFIX,teachablecdn.com
