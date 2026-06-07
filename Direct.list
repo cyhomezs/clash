@@ -1,10 +1,9 @@
 # NAME: Direct
 # foodieguide.com
-payload:
-  - '+.teachable.com'
-  - '+.teachablecdn.com'
-  - '+.hotmart.com'
-  - '+.foodieguide.us'
-  - '+.namecheap.com'
-  - '+.polar.com'
-  - '+.ngc.nvidia.com'
++.teachable.com
++.teachablecdn.com
++.hotmart.com
++.foodieguide.us
++.namecheap.com
++.polar.com
++.ngc.nvidia.com
