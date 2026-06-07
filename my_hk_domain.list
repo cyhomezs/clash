@@ -1,41 +1,38 @@
-# 需要香港IP的网站
-bcbolt446c5271-a.akamaihd.net
-edge.api.brightcove.com
-tvbtracking.azurewebsites.net
-bigbigchannel.com.hk
-bigbigshop.com
-content.jwplatform.com
-encoretvb.com
-tvb.com.au
-tvbanywhere.com
-tvbanywhere.com.sg
-tvbc.com.cn
-tvbeventpower.com.hk
-tvbusa.com
-tvbweekly.com
-tvmedia.net.au
-videos-f.jwpsrv.com
-youboranqs01.com
-fantv.hk
-hkopentv.com
-j2.hk
-nowtv100
-hoy.tv
-mytvsuperlimited.hb.omtrdc.net
-mytvsuperlimited.sc.omtrdc.net
-mytvsuper.com
-tvb.com
-rthklive2-lh.akamaihd.net
-rthkradio1-live.akamaized.net
-rthkradio2-live.akamaized.net
-rthkradio3-live.akamaized.net
-rthkradio4-live.akamaized.net
-rthkradio5-live.akamaized.net
-rthkradiocmgrgb-live.akamaized.net
-rthkradiocnrhk-live.akamaized.net
-rthkradiopth-live.akamaized.net
-rthktv31-live.akamaized.net
-rthktv32-live.akamaized.net
-rthk.hk
-rthk.org.hk
-viu.tv
+# =========================================================
+# 香港流媒体及特定服务域名集 (声明为 behavior: domain)
+# =========================================================
+payload:
+  # --- RTHK & ViuTV & HOYTV & NowTV ---
+  - '+.rthk.hk'
+  - '+.rthk.org.hk'
+  - '+.viu.tv'
+  - '+.hoy.tv'
+  - '+.fantv.hk'
+  - '+.hkopentv.com'
+  - '+.j2.hk'
+  - '+.nowtv100'              # 👈 保持原本的匹配项
+
+  # --- TVB & myTV SUPER 系列官方域名 ---
+  - '+.tvb.com'
+  - '+.mytvsuper.com'
+  - '+.bigbigchannel.com.hk'
+  - '+.bigbigshop.com'
+  - '+.encoretvb.com'
+  - '+.tvbanywhere.com'
+  - '+.tvbanywhere.com.sg'
+  - '+.tvbc.com.cn'           # 🌟 虽带 .cn，但属于 TVB 境外服务器，需走代理
+  - '+.tvbeventpower.com.hk'
+  - '+.tvbusa.com'
+  - '+.tvbweekly.com'
+  - '+.tvb.com.au'
+  - '+.tvmedia.net.au'
+
+  # --- ⚠️ 核心：流媒体底层 CDN 与数据流 (最容易被漏掉导致卡死的关键) ---
+  - '+.akamaihd.net'          # 👈 绝杀：涵盖 rthklive2-lh 和 bcbolt446c5271-a
+  - '+.akamaized.net'          # 👈 绝杀：涵盖 rthk 所有的广播/电视 live 直播流
+  - '+.azurewebsites.net'      # 👈 涵盖 tvbtracking 微软云节点
+  - '+.jwplatform.com'         # 👈 涵盖 content.jwplatform 核心播放器内核
+  - '+.jwpsrv.com'             # 👈 涵盖 videos-f 视频切片分发节点
+  - '+.omtrdc.net'             # 👈 涵盖 mytvsuperlimited 的 Adobe 流量统计节点
+  - '+.brightcove.com'         # 👈 涵盖 edge.api 视频流核心鉴权 API
+  - '+.youboranqs01.com'       # 👈 涵盖流媒体质量监测节点
