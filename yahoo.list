@@ -1,5 +1,7 @@
-query2.finance.yahoo.com
-yahoo.com
-query1.finance.yahoo.com
-guce.yahoo.com
-finance.yahoo.com
+# =========================================================
+# 雅虎财经量化数据接口集 (声明为 behavior: domain)
+# =========================================================
+payload:
+  - '+.yahoo.com'              # 👈 黄金绝杀：一行直接打包 query1、query2、finance 和 guce
+  - '+.yimg.com'               # 🌟 核心补充：雅虎财经网页及 API 返回的图片/静态资源/字体 CDN
+  - '+.yahooapis.com'          # 🌟 核心补充：雅虎官方高级 API 统一网关
