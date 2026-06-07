@@ -1,13 +1,17 @@
-# 自定义需要代理的网站
-freedidi.com
-aktv.top
-openproxylist.com
-qichiyu.com
-aktv.space
-wiki.freeembyguide.eu.org
-afusekt.cn
-nrzr.li
-blogcast.host
-falais.com
-hkma.org
-mdgw.com
+# =========================================================
+# 自定义海外/代理域名集 (声明为 behavior: domain)
+# =========================================================
+payload:
+  - '+.freedidi.com'              # 飞迪迪博客
+  - '+.aktv.top'                  # AKTV 相关服务
+  - '+.openproxylist.com'         # 免费代理列表网
+  - '+.qichiyu.com'               # 七赤鱼/相关个人站点
+  - '+.wiki.freeembyguide.eu.org' # Emby 指南百科
+  - '+.nrzr.li'                   # 泥视频/相关流媒体
+  - '+.blogcast.host'             # 播客/内容托管
+  - '+.falais.com'                # 国外特定网络服务
+  - '+.hkma.org'                  # 香港金融管理局
+  - '+.mdgw.com'                  # 门道网/相关海外节点
+
+  # --- ⚠️ 深度预警与微操：AfuseKt 影视客户端 ---
+  - '+.afusekt.cn'                # 🌟 虽带 .cn，但必须强行走代理（原因见下）
