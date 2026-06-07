@@ -1,5 +1,7 @@
 # =========================================================
 # 香港流媒体及特定服务域名集 (声明为 behavior: domain)
+# =========================================================
+# --- RTHK & ViuTV & HOYTV & NowTV ---
 +.rthk.hk
 +.rthk.org.hk
 +.viu.tv
@@ -8,6 +10,7 @@
 +.hkopentv.com
 +.j2.hk
 +.nowtv100
+# --- TVB & myTV SUPER 系列官方域名 ---
 +.tvb.com
 +.mytvsuper.com
 +.bigbigchannel.com.hk
@@ -21,6 +24,7 @@
 +.tvbweekly.com
 +.tvb.com.au
 +.tvmedia.net.au
+# --- ⚠️ 核心：流媒体底层 CDN 与数据流 (最容易被漏掉导致卡死的关键) ---
 +.akamaihd.net
 +.akamaized.net
 +.azurewebsites.net
