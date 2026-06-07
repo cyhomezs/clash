@@ -1,38 +1,31 @@
 # =========================================================
 # 香港流媒体及特定服务域名集 (声明为 behavior: domain)
-# =========================================================
-payload:
-  # --- RTHK & ViuTV & HOYTV & NowTV ---
-  - '+.rthk.hk'
-  - '+.rthk.org.hk'
-  - '+.viu.tv'
-  - '+.hoy.tv'
-  - '+.fantv.hk'
-  - '+.hkopentv.com'
-  - '+.j2.hk'
-  - '+.nowtv100'              # 👈 保持原本的匹配项
-
-  # --- TVB & myTV SUPER 系列官方域名 ---
-  - '+.tvb.com'
-  - '+.mytvsuper.com'
-  - '+.bigbigchannel.com.hk'
-  - '+.bigbigshop.com'
-  - '+.encoretvb.com'
-  - '+.tvbanywhere.com'
-  - '+.tvbanywhere.com.sg'
-  - '+.tvbc.com.cn'           # 🌟 虽带 .cn，但属于 TVB 境外服务器，需走代理
-  - '+.tvbeventpower.com.hk'
-  - '+.tvbusa.com'
-  - '+.tvbweekly.com'
-  - '+.tvb.com.au'
-  - '+.tvmedia.net.au'
-
-  # --- ⚠️ 核心：流媒体底层 CDN 与数据流 (最容易被漏掉导致卡死的关键) ---
-  - '+.akamaihd.net'          # 👈 绝杀：涵盖 rthklive2-lh 和 bcbolt446c5271-a
-  - '+.akamaized.net'          # 👈 绝杀：涵盖 rthk 所有的广播/电视 live 直播流
-  - '+.azurewebsites.net'      # 👈 涵盖 tvbtracking 微软云节点
-  - '+.jwplatform.com'         # 👈 涵盖 content.jwplatform 核心播放器内核
-  - '+.jwpsrv.com'             # 👈 涵盖 videos-f 视频切片分发节点
-  - '+.omtrdc.net'             # 👈 涵盖 mytvsuperlimited 的 Adobe 流量统计节点
-  - '+.brightcove.com'         # 👈 涵盖 edge.api 视频流核心鉴权 API
-  - '+.youboranqs01.com'       # 👈 涵盖流媒体质量监测节点
++.rthk.hk
++.rthk.org.hk
++.viu.tv
++.hoy.tv
++.fantv.hk
++.hkopentv.com
++.j2.hk
++.nowtv100
++.tvb.com
++.mytvsuper.com
++.bigbigchannel.com.hk
++.bigbigshop.com
++.encoretvb.com
++.tvbanywhere.com
++.tvbanywhere.com.sg
++.tvbc.com.cn
++.tvbeventpower.com.hk
++.tvbusa.com
++.tvbweekly.com
++.tvb.com.au
++.tvmedia.net.au
++.akamaihd.net
++.akamaized.net
++.azurewebsites.net
++.jwplatform.com
++.jwpsrv.com
++.omtrdc.net
++.brightcove.com
++.youboranqs01.com
