@@ -1,6 +1,15 @@
 # =========================================================
 # 雅虎财经量化数据接口集 (声明为 behavior: domain)
 # =========================================================
++.yahoo
 +.yahoo.com
-+.yimg.com
++.yahoo.net
++.yahoo.cn
 +.yahooapis.com
++.yahoodns.net
++.yimg.com
++.yimg.jp
++.ymail.com
++.yusercontent.com
++.flickr.com
++.techcrunch.com
