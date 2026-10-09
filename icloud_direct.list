@@ -1,3 +1,4 @@
+# icloud_direct.list 补充 geo/geosite/apple@cn.mrs 不足
 +.icloud.com
 +.icloud.cn
 +.icloud.org
@@ -18,9 +19,6 @@
 +.icloud.sk
 +.icloud.vn
 +.me.com
-+.apple-icloud.cn
-+.appleicloud.cn
-+.icloud-apple.cn
 +.icloud-isupport.com
 +.icloud-sandbox.com
 +.icloud-content.com
